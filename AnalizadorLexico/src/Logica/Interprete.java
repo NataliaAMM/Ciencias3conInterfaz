@@ -28,6 +28,9 @@ public class Interprete {
         char[] partes = palabra.toCharArray();
         boolean es = true;
         for(int i =0;i<partes.length;i++){
+            if(partes[i] == '-'){
+                i++;
+            }
             if(!Character.isDigit(partes[i])){
                 es = false;
             }
